@@ -5,6 +5,7 @@ body {
     background: linear-gradient(135deg, #e3f2fd, #ffffff);
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 header {
@@ -12,7 +13,7 @@ header {
     color: #ffffff;
     padding: 20px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Kleinere Schriftgröße für mobile Geräte */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -25,6 +26,7 @@ nav {
     background-color: #f1f1f1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+    flex-wrap: wrap; /* Ermöglicht das Umbruch von Links */
 }
 
 nav a {
@@ -48,6 +50,7 @@ nav a:hover {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 40px auto;
+    box-sizing: border-box; /* Verhindert horizontales Scrollen */
 }
 
 .intro-text {
@@ -58,6 +61,7 @@ nav a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
     animation: fadeIn 1s ease-in-out;
+    text-align: center; /* Zentriert den Text */
 }
 
 .intro-text h2 {
@@ -83,15 +87,16 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -10px; /* Korrektur für Seiteneffekte */
 }
 
 .product {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px 10px;
     padding: 30px;
-    width: calc(50% - 40px);
+    width: calc(50% - 20px);
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -161,8 +166,8 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .product {
-        width: 100%;
-        margin: 20px 0;
+        width: calc(100% - 20px); /* Volle Breite für mobile Geräte */
+        margin: 10px 0; /* Weniger Rand für mobile Geräte */
     }
 }
 
