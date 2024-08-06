@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order for Apple P12</title>
+    <link rel="stylesheet" href="order_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="order.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Order for Apple P12</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="order.html">Order</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="order-content">
+        <h2>Select Your Plan</h2>
+        <form action="#" method="post" class="order-form">
+            <div class="plan-selection">
+                <label for="plan">Choose Plan:</label>
+                <select id="plan" name="plan" required>
+                    <option value="ultimate">$26/year - ULTIMATE</option>
+                    <option value="standard">$14/year - STANDARD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="udid">UDID:</label>
+                <input type="text" id="udid" name="udid" placeholder="Enter your UDID" required>
+                <button type="button" id="fetch-udid" class="secondary-button">Purchase for this device</button>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="device-name">Device Name:</label>
+                <input type="text" id="device-name" name="device-name" placeholder="Enter your device name" required>
+            </div>
+            <div class="form-group">
+                <label for="additional-info">Additional Information:</label>
+                <textarea id="additional-info" name="additional-info" rows="4" placeholder="Additional information (optional)"></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="button">Complete Order</button>
+            </div>
+        </form>
+
+        <div class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <p>Let us help answer the most common questions you might have.</p>
+            <details>
+                <summary>I have many clients, can I purchase P12 for them? Will there be any discounts?</summary>
+                <p>You can purchase P12 certificates for your clients by providing their UDIDs. We offer discounts if you purchase more than 10 certificates, enhancing your resale profits.</p>
+            </details>
+            <details>
+                <summary>Can I get a refund after payment?</summary>
+                <p>Due to the nature of the P12 certificate, we do not offer refunds once the certificate is generated. Please ensure you are certain before placing an order.</p>
+            </details>
+            <details>
+                <summary>What is a warranty and what is it used for?</summary>
+                <p>If your P12 certificate is revoked during the warranty period, we will provide a replacement free of charge. The process usually takes 3-7 days.</p>
+            </details>
+            <details>
+                <summary>Does it work with iPhone? iPad? iPod? Mac? Apple TV?</summary>
+                <p>Yes, P12 certificates are compatible with all Apple devices, including iPhone, iPad, iPod, Mac, and Apple TV.</p>
+            </details>
+            <details>
+                <summary>Can I share this site with my friends?</summary>
+                <p>Absolutely! Share AppleP12.com with your friends, and when they purchase a certificate, you'll receive a bonus percentage.</p>
+            </details>
+            <details>
+                <summary>When can I contact customer service? What is the contact information?</summary>
+                <p>Our customer service is available from 10:00 to 20:00 GMT+8. Contact us via the website chat or email us at Support@AppleP12.com.</p>
+            </details>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Apple P12. All rights reserved.</p>
+    </footer>
+</body>
+</html>

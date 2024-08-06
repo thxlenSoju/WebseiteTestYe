@@ -5,6 +5,7 @@ body {
     background: linear-gradient(135deg, #f0f0f0, #ffffff);
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 header {
@@ -12,7 +13,7 @@ header {
     color: #ffffff;
     padding: 20px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Angepasste Schriftgröße für mobile Geräte */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -25,6 +26,7 @@ nav {
     background-color: #e9ecef;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+    flex-wrap: wrap; /* Flexbox um Links auf kleinen Bildschirmen zu umbrechen */
 }
 
 nav a {
@@ -52,6 +54,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
+    text-align: center; /* Zentriert den Text innerhalb des Inhalts */
 }
 
 .order-content h2 {
@@ -64,10 +67,14 @@ nav a:hover {
 .order-form {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Zentriert die Formularfelder */
+    width: 100%; /* Stellt sicher, dass das Formular den gesamten verfügbaren Platz nutzt */
 }
 
 .form-group {
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px; /* Begrenzung der Breite der Formulareingaben */
 }
 
 .form-group label {
@@ -75,6 +82,7 @@ nav a:hover {
     color: #555;
     margin-bottom: 5px;
     display: block;
+    text-align: left;
 }
 
 .form-group input,
@@ -101,6 +109,7 @@ nav a:hover {
 
 .form-actions {
     text-align: center;
+    width: 100%;
 }
 
 .button,
@@ -120,6 +129,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
     width: 100%;
+    max-width: 500px; /* Begrenzung der Breite der Schaltflächen */
 }
 
 .button:hover,
@@ -144,14 +154,13 @@ nav a:hover {
     .order-content {
         padding: 20px;
     }
-}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+    header {
+        font-size: 1.8rem; /* Kleinere Schriftgröße für Header auf mobilen Geräten */
     }
-    to {
-        opacity: 1;
+
+    .nav a {
+        margin: 5px 0; /* Weniger Rand für mobile Geräte */
     }
 }
 
@@ -161,6 +170,7 @@ nav a:hover {
     background-color: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Links ausrichten für bessere Lesbarkeit */
 }
 
 .faq-section h3 {
@@ -193,4 +203,13 @@ details p {
     margin-top: 10px;
     color: #333;
     line-height: 1.4;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
