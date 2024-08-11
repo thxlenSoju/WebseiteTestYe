@@ -24,11 +24,18 @@ body {
 }
 
 .hero {
-    background-image: url('path/to/hero-image.jpg');
+    background-image: url('71D9A55D-7A70-4E63-A12E-C1549C105ABC.png');
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px; /* Begrenzung der maximalen Breite */
+    margin: 0 auto; /* Zentriert den Inhalt innerhalb der Section */
+    padding: 0 20px; /* Füge Innenabstand hinzu, um den Text weiter vom Rand zu entfernen */
+    text-align: center; /* Optional: zentriert den Text */
 }
 
 .hero-content h1 {
@@ -39,6 +46,7 @@ body {
 .hero-content h5 {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6; /* Erhöht den Zeilenabstand für bessere Lesbarkeit */
 }
 
 .packages {
