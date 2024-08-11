@@ -33,9 +33,8 @@
             <div class="form-group">
                 <label for="udid">UDID:</label>
                 <input type="text" id="udid" name="udid" placeholder="Enter your UDID" required>
-                <button type="button" id="fetch-udid" class="secondary-button" 
-            onclick="downloadProfile()">Purchase for this device</button>
-        </div> 
+                <button type="button" id="fetch-udid" class="secondary-button" onclick="downloadProfile()">Purchase for this device</button>
+            </div>
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
@@ -86,5 +85,15 @@
     <footer class="footer">
         <p>&copy; 2024 Apple P12. All rights reserved.</p>
     </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        console.log('Token:', token);
+
+        // Weitere Verwendung des Tokens hier, z.B. für API-Anfragen oder zur Anzeige in der UI
+    });
+    </script>
 </body>
 </html>

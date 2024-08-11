@@ -15,5 +15,5 @@ $_SESSION['token'] = generateSessionToken($udid);
 $_SESSION['udid'] = $udid;  // UDID in der Session speichern
 
 // Nutzer zurück zur Order-Seite leiten mit dem Token als URL-Parameter
-header('Location: https://yourwebsite.com/order.html?token=' . $_SESSION['token']);
+header('Location: https://thxlensoju.github.io/WebseiteTestYe/order.html?token=' . $_SESSION['token']);
 exit;
