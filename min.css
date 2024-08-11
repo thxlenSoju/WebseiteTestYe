@@ -99,9 +99,10 @@ header {
 }
 
 .package-card h2 {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increased the font size for the titles */
     margin-bottom: 10px;
     text-align: center;
+    color: #007bff; /* Set the color to match the button */
 }
 
 .package-card p {
