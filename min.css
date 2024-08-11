@@ -46,18 +46,18 @@ header {
 }
 
 .navbar-center a {
-    background-color: #333; /* Background color for the links */
+    background-color: #333;
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
-    padding: 10px 20px; /* Adjust padding to increase the thickness and width of the background */
-    border-radius: 5px; /* Optional: Rounded corners for the background */
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .navbar-center a:hover {
-    background-color: #555; /* Darker background color on hover */
-    color: #ffd700; /* Gold color on hover */
+    background-color: #555;
+    color: #ffd700;
 }
 
 .navbar-end {
@@ -66,7 +66,7 @@ header {
 }
 
 .btn-buy-now {
-    background-color: #ff4500; /* Orange color for the 'Buy Now' button */
+    background-color: #ff4500;
     padding: 10px 20px;
     border-radius: 5px;
     color: #ffffff;
@@ -76,15 +76,14 @@ header {
 }
 
 .btn-buy-now:hover {
-    background-color: #ff6500; /* Slightly lighter orange on hover */
+    background-color: #ff6500;
     color: #ffffff;
 }
 
-/* Additional CSS for other sections */
 .subscription-packages {
-    display: block; /* Display each package card as a block, stacking them vertically */
+    display: block;
     padding: 20px;
-    margin-top: 100px; /* Added margin to prevent overlap with the fixed header */
+    margin-top: 100px;
 }
 
 .package-card {
@@ -95,7 +94,7 @@ header {
     text-align: left;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     max-width: 350px;
-    margin: 20px auto; /* Center the card and add some space between the cards */
+    margin: 20px auto;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -131,11 +130,11 @@ header {
 }
 
 .features-list .fa-check-circle {
-    color: #4CAF50; /* Green for check marks */
+    color: #4CAF50;
 }
 
 .features-list .fa-times-circle {
-    color: #FF0000; /* Red for X marks */
+    color: #FF0000;
 }
 
 .subscribe-btn {
@@ -152,4 +151,16 @@ header {
 
 .subscribe-btn:hover {
     background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .subscription-packages {
+        display: block; /* Ensure block layout on smaller screens */
+    }
+
+    .package-card {
+        max-width: 100%; /* Make the card full width */
+        margin: 20px 0; /* Space between the cards */
+    }
 }
